@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Krishna Divate | Research Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. Background Animation -->
+    <canvas id="networkCanvas"></canvas>
+
+    <!-- 2. Toast Notification (Hidden by default) -->
+    <div id="toast">Email copied to clipboard!</div>
+
+    <!-- 3. Main Layout -->
+    <div class="bento-container">
+
+        <!-- Profile Card -->
+        <div class="card profile">
+            <div class="profile-content">
+                <div class="status-badge">
+                    <span class="pulse"></span> Erasmus Mundus Applicant 2026
+                </div>
+                <h1>Harsha Krishna Divate</h1>
+                <h2 class="role">Data Scientist & Security Researcher</h2>
+                <p class="bio">
+                    <strong>BCA Graduate (First Class with Distinction)</strong>. I investigate the convergence of <strong>Statistical Intelligence</strong> and <strong>Network Resilience</strong>. 
+                    With a strong focus on <strong>secure coding</strong> and <strong>data integrity</strong>, I am seeking to specialize in <strong>Secure Intelligent Systems</strong> through a Joint Master Degree.
+                </p>
+                <div class="socials">
+                    <a href="https://github.com/HarshaDivate" target="_blank" class="btn icon-btn" title="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/harsha-krishna-divate-185539203" target="_blank" class="btn icon-btn" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <!-- Email Button with Copy Functionality -->
+                    <button onclick="copyEmail()" class="btn icon-btn" title="Copy Email"><i class="ri-mail-send-fill"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="card stats">
+            <div class="stat-item">
+                <span class="num">8.27</span>
+                <span class="label">Cumulative GPA</span>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+                <span class="num">02</span>
+                <span class="label">National Hackathon Wins</span>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+                <span class="num">6.5</span>
+                <span class="label">IELTS Band</span>
+            </div>
+        </div>
+
+        <!-- Research Domains (Universal for all programs) -->
+        <div class="card alignment">
+            <div class="card-header">
+                <i class="ri-compass-3-line icon"></i>
+                <h3>Research Domains</h3>
+            </div>
+            <div class="alignment-grid">
+                <div class="align-item">
+                    <span class="program-tag">Big Data & AI Engineering</span>
+                    <p>Proficiency in <strong>Data Pipelines, Python (Scikit-Learn), & R</strong>. Focused on scalable, data-driven architecture. Verified by Google & HackerRank.</p>
+                </div>
+                <div class="align-item">
+                    <span class="program-tag">Systems Security & Resilience</span>
+                    <p>Technical rigor in <strong>Ethical Hacking (v9)</strong> and <strong>Network Security (CCNA)</strong>. Focused on securing infrastructure against modern threats.</p>
+                </div>
+                <div class="align-item">
+                    <span class="program-tag">Applied Computer Vision</span>
+                    <p>Practical experience with <strong>MediaPipe</strong> and <strong>Edge AI (TensorFlow.js)</strong>. Focused on real-time image processing and human-computer interaction.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 1: Capstone -->
+        <a href="https://github.com/Harsha0130/Sentiment_Analysis_" target="_blank" class="card project proj-1">
+            <div class="proj-header">
+                <span class="proj-tag">Capstone Research</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Sentiment Analysis Pipeline</h3>
+            <p>End-to-end NLP system using TF-IDF & Logistic Regression. Scrapes and classifies real-world product reviews.</p>
+            
+            <ul class="metric-list">
+                <li>⚙️ <strong>Automation:</strong> Full-stack pipeline from <strong>Scraping</strong> to <strong>Inference</strong>.</li>
+                <li>📊 <strong>Data Handling:</strong> Processed unstructured, real-world datasets via Selenium.</li>
+            </ul>
+
+            <div class="tech-row">
+                <span>Python</span><span>NLP</span><span>Flask</span>
+            </div>
+        </a>
+
+        <!-- Project 2: Smart Blink -->
+        <a href="https://github.com/HarshaDivate/SmartBlinkAssistant" target="_blank" class="card project proj-2">
+            <div class="proj-header">
+                <span class="proj-tag">Computer Vision</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Smart Blink Assistant</h3>
+            <p>Privacy-first eye health tracker. Engineered with <strong>MediaPipe</strong> for client-side inference.</p>
+            
+            <ul class="metric-list">
+                <li>⚡ <strong>Latency:</strong> Real-time <strong>30 FPS</strong> tracking.</li>
+                <li>🔒 <strong>Privacy:</strong> 100% Edge-based (Zero Upload).</li>
+            </ul>
+
+            <div class="tech-row">
+                <span>JS</span><span>WebGL</span>
+            </div>
+        </a>
+
+        <!-- Project 3: Hygenious -->
+        <a href="https://github.com/HarshaDivate" target="_blank" class="card project proj-3">
+            <div class="proj-header">
+                <span class="proj-tag">Top 50 Finalist</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Hygenious AI</h3>
+            <p>AI hygiene audit system using <strong>TensorFlow.js</strong>. Rapid prototype built at Hack Karnataka.</p>
+            
+            <ul class="metric-list">
+                <li>🏆 <strong>Rank:</strong> Top 2% (Shortlisted from <strong>2500+</strong> teams).</li>
+                <li>⏱️ <strong>Sprint:</strong> Built & deployed in <strong>30 Hours</strong>.</li>
+            </ul>
+
+            <div class="tech-row">
+                <span>Next.js</span><span>TF.js</span>
+            </div>
+        </a>
+
+        <!-- 7. Technical Arsenal -->
+        <div class="card stack">
+            <h3>Technical Competencies</h3>
+            <div class="stack-list">
+                <div class="stack-item"><i class="ri-code-box-line"></i> Python (Adv)</div>
+                <div class="stack-item"><i class="ri-bar-chart-box-line"></i> R Language</div>
+                <div class="stack-item"><i class="ri-shield-check-line"></i> CyberSec (v9)</div>
+                <div class="stack-item"><i class="ri-database-2-line"></i> SQL / NoSQL</div>
+                <div class="stack-item"><i class="ri-server-line"></i> Linux Admin</div>
+                <div class="stack-item"><i class="ri-braces-line"></i> C++</div>
+            </div>
+        </div>
+
+        <!-- 8. Awards & Recognition -->
+        <div class="card awards">
+            <h3>National Recognition</h3>
+            <ul class="award-list">
+                <li>
+                    <span class="medal">🥈 1st Runner Up</span>
+                    <span class="award-desc"><strong>PAC HACK 2024</strong> (Team Sandbox)</span>
+                </li>
+                <li>
+                    <span class="medal">🥈 Runners Up</span>
+                    <span class="award-desc"><strong>ABHYUDAY 8.0</strong> (Web Designing Competition)</span>
+                </li>
+                <li>
+                    <span class="medal">👔 Coordinator</span>
+                    <span class="award-desc"><strong>SIH 2022</strong> (Hardware Edition)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 9. Certifications -->
+        <div class="card certs">
+            <h3>Credentials</h3>
+            <div class="cert-grid">
+                <span class="cert-item">Google Data Analytics</span>
+                <span class="cert-item">HackerRank: Python & R</span>
+                <span class="cert-item">Infosys: C++ & CyberSec</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="simple-footer">
+        <p>© <span id="year"></span> Harsha Krishna Divate. Open for 2026-2028 Academic Intake.</p>
+        <p style="margin-top: 10px; font-size: 0.9rem; cursor: pointer;" onclick="copyEmail()">
+            harshadivate.2003@gmail.com <i class="ri-file-copy-line" style="margin-left: 5px; color: #3b82f6;"></i>
+        </p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+</html>
