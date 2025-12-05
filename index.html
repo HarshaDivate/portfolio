@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Krishna Divate | Research Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Animation -->
+    <canvas id="networkCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">HKD<span class="dot">.</span></div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Research</a>
+                <a href="#achievements">Awards</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- Ensure you have a file named resume.pdf in your folder -->
+            <a href="resume.pdf" target="_blank" class="btn-download"><i class="ri-file-user-line"></i> CV</a>
+        </div>
+    </nav>
+
+    <div class="bento-container">
+
+        <!-- 1. Profile (ID: about) -->
+        <div class="card profile" id="about">
+            <div class="profile-content">
+                <div class="status-badge">
+                    <span class="pulse"></span> Erasmus Mundus Applicant 2026
+                </div>
+                <h1>Harsha Krishna Divate</h1>
+                <h2 class="role">Data Scientist & Security Researcher</h2>
+                <p class="bio">
+                    <strong>BCA Graduate (First Class with Distinction)</strong>. I investigate the convergence of <strong>Statistical Intelligence</strong> and <strong>Network Resilience</strong>. 
+                    With a strong focus on <strong>secure coding</strong> and <strong>data integrity</strong>, I am seeking to specialize in <strong>Secure Intelligent Systems</strong> through a Joint Master Degree.
+                </p>
+                <div class="socials">
+                    <a href="https://github.com/HarshaDivate" target="_blank" class="btn icon-btn" title="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/harsha-krishna-divate-185539203" target="_blank" class="btn icon-btn" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <button onclick="copyEmail()" class="btn icon-btn" title="Copy Email"><i class="ri-mail-send-fill"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Motivation Block -->
+        <div class="card motivation">
+            <h3><i class="ri-lightbulb-flash-line icon-accent"></i> Research Motivation</h3>
+            <p>
+                I am driven by how intelligent systems can stay robust and secure. My goal is to design algorithms that remain trustworthy in real-world conditions, bridging the gap between AI performance and system security.
+            </p>
+        </div>
+
+        <!-- 3. Key Metrics -->
+        <div class="card stats">
+            <div class="stat-item">
+                <span class="num">8.27</span>
+                <span class="label">Cumulative GPA</span>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+                <span class="num">02</span>
+                <span class="label">National Wins</span>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+                <span class="num">Top 2%</span>
+                <span class="label">Hack Karnataka</span>
+            </div>
+        </div>
+
+        <!-- 4. Research Alignment (Universal) -->
+        <div class="card alignment">
+            <div class="card-header">
+                <i class="ri-compass-3-line icon"></i>
+                <h3>Research Domains</h3>
+            </div>
+            <div class="alignment-grid">
+                <div class="align-item">
+                    <span class="program-tag">Big Data & AI Engineering</span>
+                    <p>Proficiency in <strong>Data Pipelines, Python (Scikit-Learn), & R</strong>. Verified by Google & HackerRank.</p>
+                </div>
+                <div class="align-item">
+                    <span class="program-tag">Systems Security & Resilience</span>
+                    <p>Technical rigor in <strong>Ethical Hacking (v9)</strong> and <strong>Network Security (CCNA)</strong>.</p>
+                </div>
+                <div class="align-item">
+                    <span class="program-tag">Applied Computer Vision</span>
+                    <p>Practical experience with <strong>MediaPipe</strong> and <strong>Edge AI (TensorFlow.js)</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Project: Capstone (ID: work) -->
+        <a href="https://github.com/Harsha0130/Sentiment_Analysis_" target="_blank" class="card project proj-1" id="work">
+            <div class="proj-header">
+                <span class="tag">Capstone Research</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Sentiment Analysis Pipeline</h3>
+            <p>End-to-end NLP system using TF-IDF & Logistic Regression. Scrapes and classifies real-world product reviews.</p>
+            <ul class="metric-list">
+                <li>🎯 <strong>Accuracy:</strong> Achieved <strong>92%</strong> on noisy real-world data.</li>
+                <li>📊 <strong>Scale:</strong> Processed <strong>5,000+</strong> reviews via Selenium.</li>
+            </ul>
+            <div class="tech-row">
+                <span>Python</span><span>NLP</span><span>Flask</span>
+            </div>
+        </a>
+
+        <!-- 6. Project: Smart Blink -->
+        <a href="https://github.com/HarshaDivate/SmartBlinkAssistant" target="_blank" class="card project proj-2">
+            <div class="proj-header">
+                <span class="tag">Computer Vision</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Smart Blink Assistant</h3>
+            <p>Privacy-first eye health tracker. Engineered with <strong>MediaPipe</strong> for client-side inference.</p>
+            <ul class="metric-list">
+                <li>⚡ <strong>Speed:</strong> Real-time <strong>30 FPS</strong>.</li>
+                <li>🔒 <strong>Privacy:</strong> Zero data upload.</li>
+            </ul>
+            <div class="tech-row">
+                <span>JS</span><span>WebGL</span>
+            </div>
+        </a>
+
+        <!-- 7. Project: Hygenious -->
+        <a href="https://github.com/HarshaDivate" target="_blank" class="card project proj-3">
+            <div class="proj-header">
+                <span class="tag">Top 50 Finalist</span>
+                <i class="ri-arrow-right-up-line arrow"></i>
+            </div>
+            <h3>Hygenious AI</h3>
+            <p>AI hygiene audit system using <strong>TensorFlow.js</strong>. Rapid prototype built at Hack Karnataka.</p>
+            <ul class="metric-list">
+                <li>🏆 <strong>Rank:</strong> Shortlisted from <strong>2500+</strong> teams.</li>
+                <li>⏱️ <strong>Sprint:</strong> Built in <strong>30 Hours</strong>.</li>
+            </ul>
+            <div class="tech-row">
+                <span>Next.js</span><span>TF.js</span>
+            </div>
+        </a>
+
+        <!-- 8. Awards (ID: achievements) -->
+        <div class="card awards" id="achievements">
+            <h3>National Recognition</h3>
+            <ul class="award-list">
+                <li>
+                    <span class="medal">🥈 1st Runner Up</span>
+                    <span class="award-desc"><strong>PAC HACK 2024</strong> (Team Sandbox)</span>
+                </li>
+                <li>
+                    <span class="medal">🥈 Runners Up</span>
+                    <span class="award-desc"><strong>ABHYUDAY 8.0</strong> (Web Designing Competition)</span>
+                </li>
+                <li>
+                    <span class="medal">👔 Coordinator</span>
+                    <span class="award-desc"><strong>SIH 2022</strong> (Grand Finale - Hardware)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 9. Technical Arsenal -->
+        <div class="card stack">
+            <h3>Competencies</h3>
+            <div class="stack-list">
+                <div class="stack-item"><i class="ri-code-box-line"></i> Python (Adv)</div>
+                <div class="stack-item"><i class="ri-bar-chart-box-line"></i> R Language</div>
+                <div class="stack-item"><i class="ri-shield-check-line"></i> CyberSec (v9)</div>
+                <div class="stack-item"><i class="ri-database-2-line"></i> SQL / NoSQL</div>
+                <div class="stack-item"><i class="ri-server-line"></i> Linux Admin</div>
+                <div class="stack-item"><i class="ri-braces-line"></i> C++</div>
+            </div>
+        </div>
+
+        <!-- 10. Certifications -->
+        <div class="card certs">
+            <h3>Credentials</h3>
+            <div class="cert-grid">
+                <span class="cert-item">Google Data Analytics</span>
+                <span class="cert-item">HackerRank: Python & R</span>
+                <span class="cert-item">Infosys: C++ & CyberSec</span>
+                <span class="cert-item">IELTS: 6.5</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer (ID: contact) -->
+    <footer class="simple-footer" id="contact">
+        <p>© <span id="year"></span> Harsha Krishna Divate. Open for 2026-2028 Intake.</p>
+        <p class="email-display" onclick="copyEmail()">harshadivate.2003@gmail.com <i class="ri-file-copy-line"></i></p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast">Email copied to clipboard!</div>
+
+    <!-- Logic -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="main.js"></script>
+
+</body>
+</html>
