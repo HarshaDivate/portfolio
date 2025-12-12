@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harsha Krishna Divate | Research Portfolio">
+    <meta name="author" content="Harsha Krishna Divate">
+
+    <!-- --- OWASP SECURITY HEADERS --- -->
+    <!-- Content Security Policy: Strict allowlist. No inline scripts allowed. -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self'; 
+                   style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; 
+                   font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; 
+                   img-src 'self' data:; 
+                   connect-src 'self'; 
+                   base-uri 'self'; 
+                   form-action 'self';">
+    
+    <!-- Referrer Policy: Protects user privacy -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Permissions Policy: Explicitly disables sensitive hardware access -->
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=()">
+
     <title>Harsha Krishna Divate | Research Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Icons -->
+    
+    <!-- Icons: Integrity check removed to ensure visibility -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- Fonts -->
+
+    <!-- Fonts: Added 'Courier Prime' for the Analyst Data look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -26,8 +50,8 @@
                 <a href="#achievements">Awards</a>
                 <a href="#contact">Contact</a>
             </div>
-            <!-- Ensure you have a file named resume.pdf in your folder -->
-            <a href="resume.pdf" target="_blank" class="btn-download"><i class="ri-file-user-line"></i> CV</a>
+            <!-- Added rel="noopener noreferrer" for security on target="_blank" -->
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-download"><i class="ri-file-user-line"></i> CV</a>
         </div>
     </nav>
 
@@ -46,9 +70,9 @@
                     With a strong focus on <strong>secure coding</strong> and <strong>data integrity</strong>, I am seeking to specialize in <strong>Secure Intelligent Systems</strong> through a Joint Master Degree.
                 </p>
                 <div class="socials">
-                    <a href="https://github.com/HarshaDivate" target="_blank" class="btn icon-btn" title="GitHub"><i class="ri-github-fill"></i></a>
-                    <a href="https://www.linkedin.com/in/harsha-krishna-divate-185539203" target="_blank" class="btn icon-btn" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-                    <button onclick="copyEmail()" class="btn icon-btn" title="Copy Email"><i class="ri-mail-send-fill"></i></button>
+                    <a href="https://github.com/HarshaDivate" target="_blank" rel="noopener noreferrer" class="btn icon-btn" title="GitHub" aria-label="GitHub Profile"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/harsha-krishna-divate-185539203" target="_blank" rel="noopener noreferrer" class="btn icon-btn" title="LinkedIn" aria-label="LinkedIn Profile"><i class="ri-linkedin-fill"></i></a>
+                    <button class="btn icon-btn js-copy-btn" title="Copy Email" aria-label="Copy Email"><i class="ri-mail-send-fill"></i></button>
                 </div>
             </div>
         </div>
@@ -61,20 +85,19 @@
             </p>
         </div>
 
-        <!-- 3. Key Metrics -->
+        <!-- 3. Key Metrics (Decryption Animation) -->
         <div class="card stats">
             <div class="stat-item">
-                <span class="num">8.27</span>
+                <!-- data-target holds the final value for JS to decrypt -->
+                <span class="num counter" data-target="8.27">0.00</span>
                 <span class="label">Cumulative GPA</span>
             </div>
-            <div class="divider"></div>
             <div class="stat-item">
-                <span class="num">02</span>
+                <span class="num counter" data-target="2">00</span>
                 <span class="label">National Wins</span>
             </div>
-            <div class="divider"></div>
             <div class="stat-item">
-                <span class="num">6.5</span>
+                <span class="num counter" data-target="6.5">0.0</span>
                 <span class="label">IELTS</span>
             </div>
         </div>
@@ -102,7 +125,7 @@
         </div>
 
         <!-- 5. Project: Capstone (ID: work) -->
-        <a href="https://github.com/Harsha0130/Sentiment_Analysis_" target="_blank" class="card project proj-1" id="work">
+        <a href="https://github.com/Harsha0130/Sentiment_Analysis_" target="_blank" rel="noopener noreferrer" class="card project proj-1" id="work">
             <div class="proj-header">
                 <span class="tag">Capstone Research</span>
                 <i class="ri-arrow-right-up-line arrow"></i>
@@ -119,7 +142,7 @@
         </a>
 
         <!-- 6. Project: Smart Blink -->
-        <a href="https://github.com/HarshaDivate/SmartBlinkAssistant" target="_blank" class="card project proj-2">
+        <a href="https://github.com/HarshaDivate/SmartBlinkAssistant" target="_blank" rel="noopener noreferrer" class="card project proj-2">
             <div class="proj-header">
                 <span class="tag">Computer Vision</span>
                 <i class="ri-arrow-right-up-line arrow"></i>
@@ -136,7 +159,7 @@
         </a>
 
         <!-- 7. Project: Hygenious -->
-        <a href="https://github.com/HarshaDivate" target="_blank" class="card project proj-3">
+        <a href="https://github.com/HarshaDivate" target="_blank" rel="noopener noreferrer" class="card project proj-3">
             <div class="proj-header">
                 <span class="tag">Top 50 Finalist</span>
                 <i class="ri-arrow-right-up-line arrow"></i>
@@ -200,16 +223,14 @@
     <!-- Footer (ID: contact) -->
     <footer class="simple-footer" id="contact">
         <p>© <span id="year"></span> Harsha Krishna Divate. Open for 2026-2028 Intake.</p>
-        <p class="email-display" onclick="copyEmail()">harshadivate.2003@gmail.com <i class="ri-file-copy-line"></i></p>
+        <!-- Email injected via JS to prevent scraping -->
+        <p class="email-display js-copy-btn">Loading Email... <i class="ri-file-copy-line"></i></p>
     </footer>
 
     <!-- Toast Notification -->
     <div id="toast">Email copied to clipboard!</div>
 
-    <!-- Logic -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <!-- Main Logic -->
     <script src="main.js"></script>
 
 </body>
